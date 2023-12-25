@@ -1,0 +1,36 @@
+header {
+	display: flex;
+	justify-content: center;
+	padding: 32px;
+
+}
+.header-title {
+	margin: 0;
+}
+.edit-cv {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 16px;
+}
+.form-input {
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+}
+.form-section {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.user {
+	/* border: 2px solid black; */
+	height: 100vh;
+}
+label {
+	font-weight: bold;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
