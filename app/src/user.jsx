@@ -6,6 +6,11 @@ export default function User({
 	educationData,
 	addEducation,
 	handleEducationInfo,
+	deleteEducation,
+	addExperience,
+	experienceData,
+	handleExperienceInfo,
+	deleteExperience,
 }) {
 	return (
 		<section className="user">
@@ -99,12 +104,77 @@ export default function User({
 										id="end"
 									/>
 								</div>
+								<button onClick={deleteEducation} className="delete-education">
+									Delete
+								</button>
 							</div>
 						);
 					})}
 				</div>
-				<div className="work form-section">
-					<h2 style={{ margin: 0 }}>Work</h2>
+				<div className="experience form-section">
+					<h2 style={{ margin: 0 }}>experience</h2>
+					<button onClick={addExperience} className="add-experience" type="">
+						Add
+					</button>
+					{experienceData.map((item) => {
+						return (
+							<div className="experience-form" key={item.uuid} id={item.uuid}>
+								<div className="form-input">
+									<label htmlFor="name">Company Name</label>
+									<input
+										onChange={handleExperienceInfo}
+										value={item.name}
+										type="text"
+										id="name"
+									/>
+								</div>
+								<div className="form-input">
+									<label htmlFor="position">Position</label>
+									<input
+										onChange={handleExperienceInfo}
+										value={item.position}
+										type="text"
+										id="position"
+									/>
+								</div>
+								<div className="form-input">
+									<label htmlFor="start">Start</label>
+									<input
+										onChange={handleExperienceInfo}
+										value={item.start}
+										type="text"
+										id="start"
+									/>
+								</div>
+								<div className="form-input">
+									<label htmlFor="end">End date</label>
+									<input
+										onChange={handleExperienceInfo}
+										value={item.end}
+										type="text"
+										id="end"
+									/>
+								</div>
+								<div className="form-input">
+									<label htmlFor="description">Description</label>
+									<textarea
+										name="description"
+										id="description"
+										cols="30"
+										rows="10"
+										onChange={handleExperienceInfo}
+										value={item.description}
+									></textarea>
+								</div>
+								<button
+									onClick={deleteExperience}
+									className="delete-Experience"
+								>
+									Delete
+								</button>
+							</div>
+						);
+					})}
 				</div>
 			</form>
 		</section>
