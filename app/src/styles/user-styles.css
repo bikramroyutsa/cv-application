@@ -1,3 +1,55 @@
 .school-form {
 	margin-bottom: 8px;
 }
+input {
+	padding: 8px;
+	border-radius: 8px;
+	border: 1px solid #507dbc;
+	outline: none;
+}
+.form-section {
+	background-color: #e3e5e7;
+	padding: 16px;
+}
+.user {
+	padding: 0;
+}
+.school-form,
+.experience-form {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+button {
+	all: unset;
+	background-color: #507dbc;
+	color: white;
+	padding: 8px 16px 8px 16px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	height: fit-content;
+	text-align: center;
+}
+.school-form > div,
+button {
+	/* display: none; */
+}
+.toggle-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.toggle-div > h3{
+	margin: 0;
+}
+.btn-toggle {
+	all: unset;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position: center;
+	background-image: url(../assets/arrow-down-drop-circle-outline.png);
+}

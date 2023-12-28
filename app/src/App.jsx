@@ -5,29 +5,28 @@ import CV from "./cv";
 import { v4 as uuidv4 } from "uuid";
 function App() {
 	const defaultPersonalInfo = {
-		name: "John Doe",
-		email: "johndoe@gmail.com",
-		phone: "0154684532",
-		address: "Melbourne",
+		name: "",
+		email: "",
+		phone: "",
+		address: "",
 	};
 	const defaultEducationInfo = [
 		{
 			uuid: uuidv4(),
-			name: "Neverland University",
-			degree: "Bachelors of Science in Computer Science",
-			start: "24-02-2028",
-			end: "28-6-2022",
+			name: "",
+			degree: "",
+			start: "",
+			end: "",
 		},
 	];
 	const defaultExperienceInfo = [
 		{
 			uuid: uuidv4(),
-			name: "idontknow",
-			position: "ceo",
-			start: "32-23-2923",
-			end: "432-33-22",
-			description:
-				"Quis tempor non deserunt pariatur ullamco magna. Irure incididunt cupidatat sint irure reprehenderit sunt ex ut aliqua fugiat reprehenderit. Non proident laboris Lorem esse. Velit occaecat mollit est do do dolor voluptate dolore non. Eu do do deserunt ut voluptate exercitation culpa ex consequat. Sunt in mollit aliquip excepteur do consequat minim minim. Ullamco dolore exercitation quis est enim ad velit incididunt tempor anim.",
+			name: "",
+			position: "",
+			start: "",
+			end: "",
+			description: "",
 		},
 	];
 	const [personalInfo, setPersonalInfo] = useState(defaultPersonalInfo);
